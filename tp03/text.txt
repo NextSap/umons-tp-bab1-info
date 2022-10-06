@@ -1,0 +1,12 @@
+Question 1
+
+1. Manque le return
+2. Boucle infinie  car pas de décrémentation
+3. Bonne fonction
+4. Manque le return, donc pas de valeur retournée pour x == 0
+5. Manque le cas de base
+
+Question 2
+
+Pour n == 0, la fonction va afficher un triangle
+Pour n == 1, la fonction va afficher un triangle avec un autre triangle renversé à l'entérieur
