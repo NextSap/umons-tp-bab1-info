@@ -66,20 +66,17 @@ def carre(t, x, seuil):
         carre(t, x / 4, seuil)
 
 
-turnLeft(bob)
-
-
 def arbre(t, x, a, n):
     if n == 0:
         moveForward(t, x)
         moveBackward(t, x)
     else:
         moveForward(t, x)
-        turnRight(t, a/2)
+        turnRight(t, a / 2)
         arbre(t, x * math.sqrt(2) / 2, a, n - 1)
         turnLeft(t, a)
         arbre(t, x * math.sqrt(2) / 2, a, n - 1)
-        turnRight(t, a/2)
+        turnRight(t, a / 2)
         moveBackward(t, x)
 
     """
