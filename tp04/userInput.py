@@ -1,3 +1,6 @@
+import getpass
+
+
 def belongs_to_dictionnary(word: str):
     with open("words.txt", "r", encoding="UTF-8") as file:
         word_list = file.read().splitlines()
@@ -7,7 +10,7 @@ def belongs_to_dictionnary(word: str):
 def ask_word_in_dictionnary(player_name: str):
     word = ""
     while not belongs_to_dictionnary(word):
-        word = input(player_name + " doit entrer un mot à trouver :\n").upper()
+        word = getpass.getpass(player_name + " doit entrer un mot à trouver :\n").upper()
 
     return word
 
